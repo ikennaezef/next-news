@@ -3,6 +3,8 @@ import styles from '../styles/Home.module.css';
 import Meta from '../components/Meta';
 import Card from '../components/Card';
 
+import { useId } from 'react';
+
 export default function Home({ articles }) {
   console.log(articles);
 
@@ -19,7 +21,7 @@ export default function Home({ articles }) {
 }
 
 export const getStaticProps = async () => {
-  const res = await fetch(requests.all);
+  const res = await fetch(requests.sports);
   const { articles } = await res.json();
 
   return {
