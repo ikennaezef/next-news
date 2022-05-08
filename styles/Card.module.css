@@ -1,0 +1,33 @@
+.card {
+  border-radius: 0.5rem;
+  background-color: #f8f8f8;
+  padding: 1rem;
+  transition: 0.3s ease;
+  /* min-width: 400px; */
+  /* max-width: 400px; */
+  flex: 1 1 300px;
+}
+
+.card:hover {
+  background-color: #f0ffff;
+}
+
+.text {
+  padding: 0.8rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.author {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 300;
+  margin-bottom: 0.8rem;
+}
+
+.desc {
+  line-height: 1.6;
+}
