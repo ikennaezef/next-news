@@ -25,7 +25,7 @@ const Footer = () => {
             <Link href='/technology'>Technology</Link>
           </li>
         </ul>
-        <ul className={footerStyles.logo}>
+        <ul className={footerStyles.links}>
           <li>Company</li>
           <li>
             <Link href='/about'>About Us</Link>
@@ -43,7 +43,15 @@ const Footer = () => {
         <div className={footerStyles.socials}>
           <p>Follow Us</p>
           <div className={footerStyles.socialLinks}>
-            <img src='https://www.google.com/url?sa=i&url=https%3A%2F%2Fpngset.com%2Fdownload-free-png-gfuci&psig=AOvVaw3Cyf_gGqcZ9ANMum8JncAP&ust=1652175271954000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCOjZ2dSO0vcCFQAAAAAdAAAAABAJ' />
+            <a href='#'>
+              <img src='/images/facebook.png' />
+            </a>
+            <a href='#'>
+              <img src='/images/twitter.png' />
+            </a>
+            <a href='#'>
+              <img src='/images/instagram.png' />
+            </a>
           </div>
         </div>
       </div>

@@ -7,7 +7,7 @@ import Meta from './Meta'
 
 const Layout = ({ children }) => {
   return (
-    <>
+    <div className={styles.page}>
       <Meta />
       <Nav />
       <div className={styles.container}>
@@ -17,7 +17,7 @@ const Layout = ({ children }) => {
         </main>
       </div>
       <Footer />
-    </>
+    </div>
   )
 }
 

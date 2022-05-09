@@ -3,7 +3,7 @@ import styles from '../styles/Home.module.css';
 import Meta from '../components/Meta';
 import Card from '../components/Card';
 
-const sports = ({ articles }) => {
+const entertainment = ({ articles }) => {
   return (
     <>
       <Meta title='NewsInc - Entertainment News' />

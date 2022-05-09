@@ -19,6 +19,12 @@ a {
   box-sizing: border-box;
 }
 
+html,
+body {
+  overflow-x: hidden;
+
+}
+
 h1,
 h2,
 h3,
@@ -26,4 +32,12 @@ h4,
 h5,
 h6 {
   font-family: 'PT Serif', serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
 }

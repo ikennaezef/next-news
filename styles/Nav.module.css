@@ -9,6 +9,7 @@
   margin: 0 auto;
   padding: 0 0.5rem;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   list-style: none;
 }
@@ -19,6 +20,7 @@
 
 .nav ul li a {
   transition: 0.3s ease;
+  line-height: 1.8;
 }
 
 .nav ul li a:hover {

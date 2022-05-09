@@ -10,7 +10,7 @@ export default function Home({ articles }) {
   return (
     <div className={styles.container}>
       <Meta title='NewsInc - Home' />
-      <h2 className={styles.pageTitle}>Home Page</h2>
+      <h2 className={styles.pageTitle}>Home</h2>
       <div className={styles.cards}>
         {articles.map((article, index) => <Card key={index} item={article} />)}
       </div>

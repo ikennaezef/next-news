@@ -9,7 +9,7 @@ const Card = ({ item }) => {
   return (
     <Link href='/article'>
       <div className={cardStyles.card} onClick={() => setCurrentArticle(item)} >
-        <img src={item.urlToImage} className={cardStyles.image} />
+        <img src={item.urlToImage || '/images/placeholder-image.png'} className={cardStyles.image} />
         <div className={cardStyles.text}>
           <h2 className={cardStyles.title} >{item.title}</h2>
           {item.author && <small className={cardStyles.author} ><strong>Author: </strong>{item.author}</small>}

@@ -2,11 +2,16 @@
   background-color: #333;
   color: #fff;
   margin-top: 1rem;
+  padding: 2rem 0;
 }
 
 .container {
   max-width: 1100px;
   margin: 0 auto;
+  padding: 0 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
 }
 
 .logo {
@@ -15,4 +20,46 @@
 
 .logo span {
   color: #0070f3;
+}
+
+.links li {
+  line-height: 1.5;
+}
+
+.links li a:hover {
+  color: #0070f3;
+}
+
+.links li:first-child {
+  color: #bbb;
+  margin-bottom: 1.2rem;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+}
+
+.socials p {
+  margin-bottom: 0.5rem;
+  color: #bbb;
+}
+
+.socialLinks {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.socialLinks a img {
+  width: 30px;
+  object-fit: cover;
+}
+
+
+@media (max-width: 769px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
 }
