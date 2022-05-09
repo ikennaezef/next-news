@@ -15,7 +15,7 @@ This is a news blog application for getting news. It has diffeent news categorie
 ### Links
 
 - Solution URL: [Code on GitHub](https://github.com/ikennaezef/next-news/)
-- Live Site URL: [Live site URL here](https://movio-v2.netlify.app/)
+- Live Site URL: [Live site URL here](https://my-next-news.vercel.app/)
 
 
 ### Built with
