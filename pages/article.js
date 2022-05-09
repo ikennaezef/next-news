@@ -2,10 +2,9 @@ import { useApp } from '../context/state';
 import Link from 'next/link';
 import styles from '../styles/Article.module.css';
 
-const article = () => {
+const Article = () => {
 
   const { currentArticle } = useApp();
-  console.log(currentArticle);
 
   return (
     <div>
@@ -16,7 +15,7 @@ const article = () => {
           {currentArticle.author && <p className={styles.author}>Author: {currentArticle?.author}</p>}
           <p className={styles.author}>Source: {currentArticle?.source?.name}</p>
           <p>Vengo baile la recodos mudas lo la la la desgarrados, lo quemadas hombrecillo húmedo me olvidando mármol los tierra talco. El nino sus que las algodón el las lenguas muertos. Los queman atrás transparente de donde tránsito las y nino. Deja brooklyn tierra los olvidando. Con pies amor mueven diana de entonces las, vacía tierra mi sepultura mueven huevos para los se yo. Que subía la nube la los pero de el tierra, tierra amor por perfil de de, pero.</p>
-          <a href={currentArticle.url} target='_blank' className={styles.link} >Read More</a>
+          <a href={currentArticle.url} target='_blank' rel="noreferrer" className={styles.link} >Read More</a>
         </>
       ) : (
         <>
@@ -30,4 +29,4 @@ const article = () => {
   )
 }
 
-export default article
+export default Article
