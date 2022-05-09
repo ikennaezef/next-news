@@ -54,7 +54,10 @@
   max-width: 300px;
 }
 
-
+.pageTitle {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
 
 .cards {
   display: flex;

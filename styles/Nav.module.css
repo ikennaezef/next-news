@@ -4,8 +4,9 @@
   padding: 1.5rem 0;
 }
 
-.nav>ul {
+.nav ul {
   max-width: 1100px;
+  margin: 0 auto;
   padding: 0 0.5rem;
   display: flex;
   align-items: center;

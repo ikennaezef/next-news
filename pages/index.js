@@ -3,7 +3,6 @@ import styles from '../styles/Home.module.css';
 import Meta from '../components/Meta';
 import Card from '../components/Card';
 
-import { useId } from 'react';
 
 export default function Home({ articles }) {
   console.log(articles);
@@ -11,7 +10,7 @@ export default function Home({ articles }) {
   return (
     <div className={styles.container}>
       <Meta title='NewsInc - Home' />
-      <h2>Home Page</h2>
+      <h2 className={styles.pageTitle}>Home Page</h2>
       <div className={styles.cards}>
         {articles.map((article, index) => <Card key={index} item={article} />)}
       </div>
@@ -21,7 +20,7 @@ export default function Home({ articles }) {
 }
 
 export const getStaticProps = async () => {
-  const res = await fetch(requests.sports);
+  const res = await fetch(requests.all);
   const { articles } = await res.json();
 
   return {

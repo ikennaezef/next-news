@@ -1,15 +1,14 @@
 import cardStyles from '../styles/Card.module.css';
 import Link from 'next/link';
+import { useApp } from '../context/state';
 
 const Card = ({ item }) => {
 
-  const itemId = Math.floor(Math.random() * 100000000);
-
-
+  const { setCurrentArticle } = useApp();
 
   return (
-    <Link href='/article/[id]' as={`/article/${itemId}`}>
-      <div className={cardStyles.card}>
+    <Link href='/article'>
+      <div className={cardStyles.card} onClick={() => setCurrentArticle(item)} >
         <img src={item.urlToImage} className={cardStyles.image} />
         <div className={cardStyles.text}>
           <h2 className={cardStyles.title} >{item.title}</h2>

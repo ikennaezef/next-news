@@ -1,8 +1,9 @@
 import React from 'react';
 import styles from '../styles/Layout.module.css';
-import Nav from '../components/Nav';
-import Header from '../components/Header'
-import Meta from '../components/Meta'
+import Nav from './Nav';
+import Header from './Header';
+import Footer from './Footer';
+import Meta from './Meta'
 
 const Layout = ({ children }) => {
   return (
@@ -15,6 +16,7 @@ const Layout = ({ children }) => {
           {children}
         </main>
       </div>
+      <Footer />
     </>
   )
 }

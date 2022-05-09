@@ -10,6 +10,15 @@ const Nav = () => {
           <Link href='/' >Home</Link>
         </li>
         <li>
+          <Link href='/sports' >Sports</Link>
+        </li>
+        <li>
+          <Link href='/entertainment' >Entertainment</Link>
+        </li>
+        <li>
+          <Link href='/technology' >Technology</Link>
+        </li>
+        <li>
           <Link href='/about' >About</Link>
         </li>
       </ul>
