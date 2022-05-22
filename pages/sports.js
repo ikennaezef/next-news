@@ -19,7 +19,7 @@ const sports = ({ articles }) => {
 
 export default sports;
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   const res = await fetch(requests.sports);
   const { articles } = await res.json();
 

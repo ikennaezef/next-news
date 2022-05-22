@@ -19,7 +19,7 @@ const entertainment = ({ articles }) => {
 
 export default entertainment;
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   const res = await fetch(requests.entertainment);
   const { articles } = await res.json();
 

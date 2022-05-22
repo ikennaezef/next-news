@@ -9,7 +9,7 @@
 
 ## Overview
 
-This is a news blog application for getting news. It has diffeent news categories such as sports, entertainment, technology.
+This is a news blog application for getting news. It has different news categories such as sports, entertainment, technology.
 
 
 ### Links

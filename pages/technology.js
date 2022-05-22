@@ -19,7 +19,7 @@ const technology = ({ articles }) => {
 
 export default technology;
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   const res = await fetch(requests.technology);
   const { articles } = await res.json();
 

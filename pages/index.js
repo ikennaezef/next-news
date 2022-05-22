@@ -5,7 +5,6 @@ import Card from '../components/Card';
 
 
 export default function Home({ articles }) {
-  console.log(articles);
 
   return (
     <div className={styles.container}>
@@ -19,7 +18,7 @@ export default function Home({ articles }) {
   )
 }
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   const res = await fetch(requests.all);
   const { articles } = await res.json();
 
